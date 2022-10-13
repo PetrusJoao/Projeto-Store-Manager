@@ -37,7 +37,7 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: password
       MYSQL_HOST: db # Nome do service logo abaixo
-      PORT: '3001'
+      PORT: '3000'
       HOST: store_manager
     networks:
       # Conecta esse serviço com a rede que criada
@@ -49,10 +49,11 @@ services:
     image: mysql:8.0.23
     environment:
       MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: StoreManager
     ports:
       # Garanta que não haverá conflitos de porta com um banco que esteja
       # rodando localmente
-      - 3206:3206
+      - 3306:3306
     networks:
       # Conecta esse serviço com a rede que criada 
       - store_manager_net
