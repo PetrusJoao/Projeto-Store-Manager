@@ -45,5 +45,38 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "3fa4e034-2b28-4c1f-9a76-e355b7e2da64",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/sales",
+    "url": "http://localhost:3000/sales",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-17T19:35:14.432Z",
+    "modified": "2022-10-17T19:38:23.024Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "[\n  {\n    \"productId\": 1,\n    \"quantity\": 1\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e3b75fdb-a04e-4d7b-af59-3a4f954b801e",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/sales",
+    "url": "http://localhost:3000/sales",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-17T19:39:12.618Z",
+    "modified": "2022-10-17T19:40:14.509Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
