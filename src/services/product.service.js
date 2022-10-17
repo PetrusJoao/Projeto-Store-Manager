@@ -17,9 +17,9 @@ const findProductById = async (id) => {
 const createProduct = async (name) => {
   const product = await productModel.insertProduct(name);
   const result = await productModel.findByID(product);
-  if (!result) {
+  /* if (!result) {
     return { type: 'erro', message: 'Product not added' };
-  }
+  } */
   return { type: null, message: result };
 };
 
