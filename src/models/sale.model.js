@@ -1,11 +1,11 @@
 const connection = require('./connection');
 
-const findAll = async () => {
+const findAllSales = async () => {
   const [result] = await connection.execute('SELECT * FROM StoreManager.sales');
   return result;
 };
 
-const findByID = async (id) => {
+const findBySaleID = async (id) => {
   const [[result]] = await connection.execute(
     'SELECT * FROM StoreManager.sales WHERE id = ?', [id],
   );
@@ -20,8 +20,18 @@ const insertSale = async () => {
   return insertId;
 };
 
+const insertSaleProduct = async (saleId, { productId, quantity }) => {
+  const result = await connection.execute(
+    'INSERT INTO StoreManager.sales_products (sale_id, product_id, quantity) VALUES (?, ?, ?)',
+    [saleId, productId, quantity],
+    );
+
+  return result;
+};
+
 module.exports = {
-  findAll,
-  findByID,
+  findAllSales,
+  findBySaleID,
   insertSale,
+  insertSaleProduct,
 };

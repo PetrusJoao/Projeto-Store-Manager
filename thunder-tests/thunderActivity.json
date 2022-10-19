@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-10-11T20:17:41.655Z",
-    "modified": "2022-10-17T18:22:59.645Z",
+    "modified": "2022-10-18T22:27:23.982Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -55,12 +55,12 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-10-17T19:35:14.432Z",
-    "modified": "2022-10-17T19:38:23.024Z",
+    "modified": "2022-10-19T13:23:46.005Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "[\n  {\n    \"productId\": 1,\n    \"quantity\": 1\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
+      "raw": "[\n  {\n    \"productId\": 2,\n    \"quantity\": 1\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
       "form": []
     },
     "tests": []
@@ -74,7 +74,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-10-17T19:39:12.618Z",
-    "modified": "2022-10-17T19:40:14.509Z",
+    "modified": "2022-10-19T13:23:47.784Z",
     "headers": [],
     "params": [],
     "tests": []

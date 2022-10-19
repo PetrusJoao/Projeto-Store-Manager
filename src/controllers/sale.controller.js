@@ -15,10 +15,10 @@ const getSaleById = async (request, response) => {
 };
 
 const addSale = async (request, response) => {
-  const { sales } = request.body;
+  const sales = request.body;
   const { type, message } = await saleService.createSale(sales);
   if (type) {
-    return response.status(400).json({ message });    
+    return response.status(type).json({ message });    
   }
   response.status(201).json(message);
 };
