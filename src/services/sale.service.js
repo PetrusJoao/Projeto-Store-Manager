@@ -1,16 +1,14 @@
 const { saleModel, productModel } = require('../models/index');
 
 const findAllSales = async () => {
-  const result = await saleModel.findAllSales();
-
+  const result = await saleModel.findAllSaleProduct();
   return { type: null, message: result };
 };
 
 const findSaleById = async (id) => {
   const result = await saleModel.findBySaleID(Number(id));
-  if (!result) {
-    return { type: 'erro', message: 'Product not found' };
-  }
+  if (result.length === 0) { return { type: 'SALE_NOT_FOUND', message: 'Sale not found' }; }
+  console.log(result.length);
   return { type: null, message: result };
 };
 

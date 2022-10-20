@@ -47,8 +47,19 @@ const validateQuantity = (req, res, next) => {
   next();
 };
 
+const validateSaleId = (req, res, next) => {
+  const { id } = req.params;
+    if (!id) {
+      return res.status(400).json({
+        message: 'Sale not found',
+      });
+    }
+    next();
+};
+
 module.exports = {
   validateProductId,
   validateQuantity,
   validateQuantityExists,
+  validateSaleId,
 };

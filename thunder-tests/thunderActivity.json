@@ -74,7 +74,21 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-10-17T19:39:12.618Z",
-    "modified": "2022-10-19T13:23:47.784Z",
+    "modified": "2022-10-20T23:22:00.765Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "aeb5f242-ed62-4de9-ab59-04ae4c22df03",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/sales/id",
+    "url": "http://localhost:3000/sales/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-17T19:39:12.618Z",
+    "modified": "2022-10-20T23:54:34.468Z",
     "headers": [],
     "params": [],
     "tests": []
