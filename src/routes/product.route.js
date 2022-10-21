@@ -7,5 +7,6 @@ const validateName = require('../middlewares/product.validation');
 route.get('/', productController.getProducts);
 route.get('/:id', productController.getProductById);
 route.post('/', validateName, productController.addProduct);
+route.put('/:id', validateName, productController.updateProduct);
 
 module.exports = route;

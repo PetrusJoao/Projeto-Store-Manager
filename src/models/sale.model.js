@@ -8,6 +8,8 @@ const findAllSales = async () => {
 
 const findBySaleID = async (id) => {
   const [result] = await connection.execute(
+    // trecho editado com a orientação e ajuda do amigo Willian Portela
+    // https://github.com/will-796
    `SELECT date, product_id, quantity
     FROM StoreManager.sales_products as saleProduct
     INNER JOIN StoreManager.sales as sales
@@ -37,6 +39,8 @@ const insertSaleProduct = async (saleId, { productId, quantity }) => {
 
 const findAllSaleProduct = async () => {
   const [result] = await connection.execute(
+    // trecho editado com a orientação e ajuda do amigo Willian Portela
+    // https://github.com/will-796
     `SELECT sale_id, date, product_id, quantity
     FROM StoreManager.sales_products as saleProduct
     INNER JOIN StoreManager.sales as sales

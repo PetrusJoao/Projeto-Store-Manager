@@ -23,8 +23,19 @@ const addProduct = async (request, response) => {
   response.status(201).json(message);
 };
 
+const updateProduct = async (request, response) => {
+  const { name } = request.body;
+  const { id } = request.params;
+  const { type, message } = await productService.editProduct(id, name);
+  if (type) {
+    return response.status(404).json({ message });    
+  }
+  response.status(200).json(message);
+};
+
 module.exports = {
   getProducts,
   getProductById,
   addProduct,
+  updateProduct,
 };
