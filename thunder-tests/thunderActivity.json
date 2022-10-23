@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-10-11T20:17:41.655Z",
-    "modified": "2022-10-21T13:04:14.941Z",
+    "modified": "2022-10-23T18:48:22.324Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -44,6 +44,20 @@
       "raw": "{\n  \"name\": \"Martelo do Batman\"\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "73ecb1c9-b1e3-473a-a809-9a24ba43b57c",
+    "colId": "history",
+    "containerId": "",
+    "name": "DeleteProduct",
+    "url": "http://localhost:3000/products/1",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-10-11T20:17:41.655Z",
+    "modified": "2022-10-23T18:48:19.305Z",
+    "headers": [],
+    "params": [],
     "tests": []
   },
   {
